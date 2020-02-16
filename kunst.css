@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#hero {
+    background-image: url('./img/hero2.jpg');
+    background-color: white;
+    display: table;
+    position: relative;
+    height: 40%;
+    width: 100%;
+    background-position: 50% 25%;
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom; 
+}
+
+.hero-text h4 {
+    font-size: 500%;
+
+}
+
+.nav {
+    background-color: rgb(161, 128, 85);
+    padding: 5px;
+}
+
+.nav-links {
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.nav-links a:hover {
+    opacity: 0.5;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    padding: 0 2em;
+    text-decoration: none;
+}
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.title h1 {
+    color: white;
+}
+
+.overlap-container {
+    height: auto;
+    transform: translateY(-10%);
+}
+
+.off-black {
+    background-color: rgb(3, 3, 3);
+    width: 100%;
+    height: auto;
+}
+
+.brown {
+    background-color: rgb(161, 128, 85);
+}
+
+.red {
+    background-color: red;
+}
+
+.font p {
+    color: white;
+    padding: 1em;
+}
+
+.font h4 {
+    color: white;
+    padding: 1em;
+
+}
+
+.audrpic img {
+    padding: 3em;
+    width: 100%;
+    height: auto;
+}
+
+.padding {
+    padding: 20px 0;
+}
+
+.fa {
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.fa:hover {
+    color: rgb(189, 185, 185);
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(161, 128, 85);
+    padding: 0.5em;
+    color: white;
+}
+
+
+/*FONT RESIZE*/
+@media (min-width: 380px) {
+    .font p { font-size: 2em; }
+    .font h4 { font-size: 5em;}
+}
+@media (min-width: 380px) {
+    .font p { font-size: 2em; }
+    .font h4 { font-size: 3em;}
+}
+@media (min-width: 576px) {
+    .font p { font-size: 2em; }
+    .font h4 { font-size: 8em;}
+}
+@media (min-width: 768px) {
+    .font p { font-size: 2em; }
+    .font h4 { font-size: 5em;}
+}
+@media (min-width: 992px) {
+    .font p { font-size: 2em; }
+    .font h4 { font-size: 6em;}
+}
+@media (min-width: 1200px) {
+    .font p { font-size: 2em; }
+    .font h4 { font-size: 8em;}
+}
+
+/*GALLERI*/
+
+.gallery-section {
+    width: 100%;
+    padding: 60px 0;
+    background: rgb(161, 128, 85);
+
+}
+
+.inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.gallery-section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.border {
+    width: 180px;
+    height: 4px;
+    background: white;
+    margin: 60px auto;
+
+}
+
+.gallery-section .gallery {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.gallery-section .image {
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-section .gallery img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.gallery-section .image:hover img {
+    transform: scale(1.4) rotate(10deg);
+}
+
+@media screen and (max-width:960px) {
+    .gallery-section .image {
+        flex: 33.33%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery-section .image {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .gallery-section .image {
+        flex: 100%;
+    }
+}

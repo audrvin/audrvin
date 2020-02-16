@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="kunst.css">
+    
+    <title>AW</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul class="nav-links">
+            <li> <a href="index.html">hjem</a> </li>
+            <li> <a href="musikk.html">musikk</a> </li>
+            <li> <a href="kunst.html">kunst</a> </li>
+            <li> <a href="didaktikk.html">didaktikk</a> </li>
+        </ul>
+    </div>
+
+    <div id="hero">
+        <div class="hero-text">
+        </div>
+    </div>
+
+    <div class="padding">
+        <div class="container overlap-container brown">
+
+            <!--ROW 1-->
+            <div class="row row-flex">
+                <div class="col-sm-12">
+
+                    <div class="gallery-section">
+                        <div class="inner-width">
+                            <h1>galleri</h1>
+                            <div class="border"></div>
+                            <div class="gallery">
+
+                                <a href="./img/kunst/fjes.jpg" class="image">
+                                    <img src="./img/kunst/fjes.jpg" alt="">
+                                </a>
+
+                                <a href="./img/kunst/førstemann.jpg" class="image">
+                                    <img src="./img/kunst/førstemann.jpg" alt="">
+                                </a>
+
+                                <a href="./img/kunst/totem.jpg" class="image">
+                                    <img src="./img/kunst/totem.jpg" alt="">
+                                </a>
+
+                                <a href="./img/kunst/slott2.png" class="image">
+                                    <img src="./img/kunst/slott2.png" alt="">
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $(".gallery").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery:{
+                enabled: true
+            }
+        });
+    </script>
+    
+
+    <footer class="fluid-container text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="#" class='fa fa-facebook'></a>
+                    <a href="#" class='fa fa-twitter'></a>
+                    <a href="#" class='fa fa-google'></a>
+                    <a href="#" class='fa fa-linkedin'></a>
+                    <a href="#" class='fa fa-youtube'></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
